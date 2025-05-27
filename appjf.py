@@ -20,7 +20,7 @@ from dash import Dash,dcc, html, Input, Output, callback
 
 
 app = Dash(__name__)
-formtemplatescategories=pd.read_csv("/home/batuhan-saylam/Desktop/JotformProject/formTemplatesCategories.csv")
+formtemplatescategories=pd.read_csv("/home/batuhansaylam/Desktop/Jotform_staj_2023/data/formTemplatesCategories.csv")
 app.layout=html.Div([
     html.Div([
         html.Div([

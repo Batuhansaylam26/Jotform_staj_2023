@@ -6,12 +6,12 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
 from dash import Dash,dcc, html, Input, Output, callback
-from decompose import decompose
-formtemplatescategories=pd.read_csv("/home/batuhan-saylam/Desktop/JotformProject/formTemplatesCategories.csv")
+from src.decompose import decompose
+formtemplatescategories=pd.read_csv("/home/batuhansaylam/Desktop/Jotform_staj_2023/data/formTemplatesCategories.csv")
 dec1=decompose()
 dec2=decompose()
 dec3=decompose()
-dec3.sd("Tax Forms","Noncovid")
+dec3.sd("Tax Forms")
 fig3=dec3.figure_update()
 app = Dash(__name__)
 app.layout=html.Div([
